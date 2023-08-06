@@ -9,16 +9,12 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin 5s ease-in-out infinite forwards;
+    animation: App-logo-spin infinite 20s linear;
   }
 }
 
 .App-header {
-  background: linear-gradient(45deg, #fd3903, #f677ae, #020682, #bcf2e5);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
-	height: 100vh;
-  
+  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,29 +22,17 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  font-family: Helvetica;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+.App-link {
+  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  0% {
-    transform: rotate(360deg);
-  }
-  50% {
+  from {
     transform: rotate(0deg);
   }
-  100% {
+  to {
     transform: rotate(360deg);
   }
 }

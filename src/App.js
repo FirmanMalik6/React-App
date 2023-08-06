@@ -1,21 +1,25 @@
-import React from 'react';
-import './App.css';
-import logo from './logo.svg';
-import { Route, Routes } from 'react-router-dom';
-import { Myname } from './components/Myname';
-import { Home } from './components/Home';
+import React from 'react'
+import { Routes, Route } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { Login } from './pages/Login';
+import Page1 from './pages/page1';
+import Page2 from './pages/page2';
+import Page3 from './pages/page3';
+import Navbar from './components/navbar';
 
 function App() {
   return (
-      <div class="App">
-        <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='Myname' element={<Myname />}></Route>
-        </Routes>
-        </header>
-      </div>
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Login />}></Route>
+        <Route path='/home' element={<Home />}></Route>
+        <Route path='/page1' element={<Page1 />}></Route>
+        <Route path='/page2' element={<Page2 />}></Route>
+        <Route path='/page3' element={<Page3 />}></Route>
+      </Routes>
+    </div>
   );
 }
+
 export default App;

@@ -1,0 +1,12 @@
+.wadidaw {
+    margin: 0 auto;
+    height: 300px;
+    width: 30em;
+    border: 2px solid rgb(198, 198, 198);
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 13px 13px 31px #cccccc, -13px -13px 31px #ffffff;
+    position: relative;
+    display: grid;
+    place-items: center;
+}

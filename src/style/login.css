@@ -1,0 +1,15 @@
+.waduh{
+    margin: 0 auto;
+    width: 800px;
+    border: 2px solid rgb(198, 198, 198);
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow:  13px 13px 31px #cccccc, -13px -13px 31px #ffffff;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    margin-left: 50px;
+}
